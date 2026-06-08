@@ -1,0 +1,22 @@
+# Maven build output
+/target/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code workspace files
+.vscode/
+bin/

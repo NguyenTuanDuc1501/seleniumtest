@@ -65,11 +65,11 @@ public class LoginTest {
         usernameInput.clear();
         usernameInput.sendKeys("giangvien");
 
-        // Fill password
-        System.out.println("Entering password...");
+        // Fill password (Intentionally using wrong password to make test fail for CI/CD demo)
+        System.out.println("Entering wrong password to simulate failure...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
-        passwordInput.sendKeys("123456789");
+        passwordInput.sendKeys("Tuanduc@.com1501_SAI");
 
         // Click login button
         System.out.println("Clicking login button...");

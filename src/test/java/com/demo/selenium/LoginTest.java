@@ -19,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginTest {
     private WebDriver driver;
     private WebDriverWait wait;
-    private final String url = "https://sv20.tlu.edu.vn/#/login";
+    private final String url = "https://sinhvien1.tlu.edu.vn/#/login";
 
     @BeforeEach
     public void setUp() {
@@ -63,9 +63,10 @@ public class LoginTest {
         System.out.println("Entering username...");
         WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
         usernameInput.clear();
-        usernameInput.sendKeys("giangvien");
+        usernameInput.sendKeys("2351067091");
 
-        // Fill password (Intentionally using wrong password to make test fail for CI/CD demo)
+        // Fill password (Intentionally using wrong password to make test fail for CI/CD
+        // demo)
         System.out.println("Entering wrong password to simulate failure...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
@@ -96,7 +97,7 @@ public class LoginTest {
         System.out.println("Entering username...");
         WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
         usernameInput.clear();
-        usernameInput.sendKeys("giangvien");
+        usernameInput.sendKeys("2351067091");
 
         // Fill wrong password
         System.out.println("Entering incorrect password...");

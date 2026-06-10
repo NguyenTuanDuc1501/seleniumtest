@@ -70,7 +70,7 @@ public class LoginTest {
         System.out.println("Entering wrong password to simulate failure...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
-        passwordInput.sendKeys("Tuanduc@.com1501_SAI");
+        passwordInput.sendKeys("Tuanduc@.com1501");
 
         // Click login button
         System.out.println("Clicking login button...");

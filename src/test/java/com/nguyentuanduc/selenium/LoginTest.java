@@ -1,4 +1,4 @@
-package com.demo.selenium;
+package com.nguyentuanduc.selenium;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -103,7 +103,7 @@ public class LoginTest {
         System.out.println("Entering incorrect password...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
-        passwordInput.sendKeys("WrongPassword123");
+        passwordInput.sendKeys("Tuanduc@.com1501");
 
         // Click login button
         System.out.println("Clicking login button...");

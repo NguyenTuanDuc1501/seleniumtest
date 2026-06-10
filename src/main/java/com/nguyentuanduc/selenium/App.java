@@ -1,4 +1,4 @@
-package com.demo.selenium;
+package com.nguyentuanduc.selenium;
 
 public class App {
     public static void main(String[] args) {

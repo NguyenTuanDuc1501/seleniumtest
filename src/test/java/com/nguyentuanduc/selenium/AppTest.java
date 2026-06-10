@@ -1,4 +1,4 @@
-package com.demo.selenium;
+package com.nguyentuanduc.selenium;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;

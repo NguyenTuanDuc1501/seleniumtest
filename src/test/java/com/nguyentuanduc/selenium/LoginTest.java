@@ -65,9 +65,8 @@ public class LoginTest {
         usernameInput.clear();
         usernameInput.sendKeys("2351067091");
 
-        // Fill password (Intentionally using wrong password to make test fail for CI/CD
-        // demo)
-        System.out.println("Entering wrong password to simulate failure...");
+        // Fill password (Correct password to ensure success)
+        System.out.println("Entering correct password...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
         passwordInput.sendKeys("Tuanduc@.com1501");
@@ -99,11 +98,11 @@ public class LoginTest {
         usernameInput.clear();
         usernameInput.sendKeys("2351067091");
 
-        // Fill wrong password
+        // Fill wrong password (Incorrect password to ensure login fails as expected)
         System.out.println("Entering incorrect password...");
         WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
         passwordInput.clear();
-        passwordInput.sendKeys("Tuanduc@.com1501");
+        passwordInput.sendKeys("WrongPassword123");
 
         // Click login button
         System.out.println("Clicking login button...");
